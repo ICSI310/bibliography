@@ -6,7 +6,7 @@ public class Main
   public static void main(String[] args) {
     //Date date = new Date(16, 2, 2016);
     
-    Date date = new Date();
+    /*Date date = new Date();
     
     // test constructor, getters
     System.out.println("day: " + date.getDay());
@@ -22,8 +22,29 @@ public class Main
     System.out.println("month: " + date.getMonth());
     System.out.println("year: " + date.getYear());
     
-    System.out.println(date.toString());
+    System.out.println(date.toString());*/
     
+    // test initial constructor
+    Citation citation = new Citation();
+    System.out.println("author: " + citation.getAuthor());
+    System.out.println("title: " + citation.getTitle());
+    System.out.println("date: " + citation.getDate());
 
+    // test other constructor
+    Citation myCitation = new Citation("Upton Sinclair", "The Jungle", new Date(16, 2, 2016));
+    System.out.println("author: " + myCitation.getAuthor());
+    System.out.println("title: " + myCitation.getTitle());
+    System.out.println("date: " + myCitation.getDate());
+    
+    // test setters
+    myCitation.setAuthor("Author");
+    myCitation.setTitle("Title");
+    myCitation.setDate(new Date());
+    System.out.println("author: " + myCitation.getAuthor());
+    System.out.println("title: " + myCitation.getTitle());
+    System.out.println("date: " + myCitation.getDate());
+    
+    
   }
+  
 } // class Main
