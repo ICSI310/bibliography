@@ -44,4 +44,13 @@ public class Date {
     this.year = year;
   }
   
+  public String toString() {
+    return (String.format("%02d", this.month) + 
+            "/" + 
+            String.format("%02d", this.day) +
+            "/" + 
+            String.format("%04d", this.year));
+
+  }
+  
 }
