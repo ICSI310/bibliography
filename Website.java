@@ -29,7 +29,7 @@ public class Website extends Citation {
     return this.url;
   }
   
-  public String getAccessDate() {
+  public Date getAccessDate() {
     return this.accessDate;
   }
   
@@ -42,7 +42,7 @@ public class Website extends Citation {
     this.url = url;
   }
   
-  public void setAccessDate(String accessDate) {
+  public void setAccessDate(Date accessDate) {
     this.accessDate = accessDate;
   }
   
@@ -51,7 +51,7 @@ public class Website extends Citation {
     return (super.toString() + " " +
             this.siteName + " " + 
             this.url + " " + 
-            this.accessDate + " " + );
+            this.accessDate + " " );
   }
   
   @Override

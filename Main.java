@@ -79,6 +79,39 @@ public class Main
     /*Citation book3 = new Citation("the author", "the title", new Date(2, 17, 2016));
     Book book4 = (Book)book3;
     book4.print();*/
+    
+    //test Website object
+    // test default constructor
+    Website site1 = new Website();
+    // test print method
+    site1.print();
+    
+    // test constructor that takes values
+    Website site2 = new Website("author", "title", new Date(2, 17, 2016), "sitename", "url", new Date(3, 20, 2017));
+    site2.print();
+    
+    // test setters
+    site2.setAuthor("me");
+    site2.setTitle("my website");
+    site2.setDate(new Date(1, 2, 3));
+    site2.setSiteName("sitename");
+    site2.setUrl("thing.com");
+    site2.setAccessDate(new Date(4, 5, 6));
+    // test getters
+    System.out.println("author: " + site2.getAuthor());
+    System.out.println("title: " + site2.getTitle());
+    System.out.println("date: " + site2.getDate());
+    System.out.println("siteName: " + site2.getSiteName());
+    System.out.println("url: " + site2.getUrl());
+    System.out.println("accessDate: " + site2.getAccessDate());
+
+    
+    
+    
+    
+    
+    
+    
   }
   
 } // class Main
