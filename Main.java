@@ -69,7 +69,16 @@ public class Main
     System.out.println("title: " + book1.getTitle());
     System.out.println("date: " + book1.getDate());
     
+    // test constructor with arguments
+    Book book2 = new Book("publisher", "author", "title", new Date(7,8,9));
+    book2.print();
     
+    // test constructor from superclass
+    // superclass constructor won't interfere with subclasses if not implented
+    // but don't try casting -> classCastException
+    /*Citation book3 = new Citation("the author", "the title", new Date(2, 17, 2016));
+    Book book4 = (Book)book3;
+    book4.print();*/
   }
   
 } // class Main
