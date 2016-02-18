@@ -45,12 +45,15 @@ public class Citation {
   }
   
   public String toString() {
-    return (String.format("%02d", this.title) + 
-            "/" + 
-            String.format("%02d", this.author) +
-            "/" + 
-            String.format("%04d", this.date));
-
+    return (this.title + " " +
+            this.author + " " + 
+            this.date );
   }
+  
+  public void print() {
+    System.out.println(this.toString());
+  }
+  
+  
   
 }

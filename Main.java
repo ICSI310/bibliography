@@ -44,7 +44,8 @@ public class Main
     System.out.println("title: " + myCitation.getTitle());
     System.out.println("date: " + myCitation.getDate());
     
-    
+    System.out.println("to test myCitation.print()");
+    myCitation.print();
   }
   
 } // class Main
