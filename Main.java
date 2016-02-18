@@ -25,7 +25,7 @@ public class Main
     System.out.println(date.toString());*/
     
     // test initial constructor
-    Citation citation = new Citation();
+    /*Citation citation = new Citation();
     System.out.println("author: " + citation.getAuthor());
     System.out.println("title: " + citation.getTitle());
     System.out.println("date: " + citation.getDate());
@@ -45,7 +45,31 @@ public class Main
     System.out.println("date: " + myCitation.getDate());
     
     System.out.println("to test myCitation.print()");
-    myCitation.print();
+    myCitation.print();*/
+    
+    // test Book Class
+    Book book1 = new Book();
+    // test default constructor
+    book1.print();
+    
+    // test setters
+    book1.setDate(new Date(10, 11, 12));
+    book1.setTitle("Strawberry Cake Recipe");
+    book1.setAuthor("Daryl Strawberry");
+    book1.setPublisher("Banannas");
+    // test print
+    book1.print();
+    
+    // test toString
+    System.out.println(book1.toString());
+    
+    // test getters
+    System.out.println("publisher: " + book1.getPublisher());
+    System.out.println("author: " + book1.getAuthor());
+    System.out.println("title: " + book1.getTitle());
+    System.out.println("date: " + book1.getDate());
+    
+    
   }
   
 } // class Main
